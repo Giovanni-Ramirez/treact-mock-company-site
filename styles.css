@@ -299,3 +299,61 @@ li {
 }
 
 /* STEPS SECTION */
+
+.steps__container {
+    display: flex;
+}
+
+.steps__img--container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.steps__img--wrapper {
+    width: 100%;
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__info {
+    width: 50%;
+}
+
+.steps__card {
+    display: flex;
+    width: 75%;
+    padding: 16px 0;
+}
+
+.steps__card--num {
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.1);
+    padding-right: 16px;
+}
+
+.steps__card--title {
+    font-size: 24px;
+    color: var(--dark-blue-color);
+    padding-bottom: 20px;
+}
+
+.steps__card--para {
+    color: var(--gray-color);
+    font-size: 18px;
+}
+
+.dotted2 {
+    position: absolute;
+    /* inset: 0; */
+    right: 38%;
+    bottom: 36px;
+    z-index: -1;
+    height: 148px;
+    width: 148px;
+    background-image: radial-gradient(#e8dbff 3px, transparent 3px);
+    background-size: 16px 16px;
+}
