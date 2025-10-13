@@ -357,3 +357,140 @@ li {
     background-image: radial-gradient(#e8dbff 3px, transparent 3px);
     background-size: 16px 16px;
 }
+
+/* PRICING */
+
+
+.pricing__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__para {
+    max-width: 450px;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 64px;
+}
+
+.plan {
+    width: calc(100%/3.5);
+    /* height: 500px; */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgb(0 0 0 / 10%);
+}
+
+.plan__pricing--info {
+    margin-top: 8px;
+    background-color: #fff;
+    padding: 24px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.plan__pricing--info h1 {
+    font-size: 40px;
+    font-weight: 800;
+    padding: 12px 0;
+}
+
+.plan__pricing--p {
+    color: #9cabbe;
+    font-weight: 700;
+}
+
+
+
+.plan__info {
+    padding: 24px 0;
+    background-color: #fff;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.plan__info h3 {
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.plan__ul {
+    font-size: 18px;
+    font-weight: 700;
+    color: #7a899e;
+}
+
+.plan__ul li {
+    padding: 12px 0;
+}
+
+.plan__btn--container {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan__btn {
+    width: 50%;
+    height: 50%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+        /* this is the different color for the plans */
+
+.plan__personal {
+    background: #39B2AD;
+    background: linear-gradient(145deg, rgba(57, 178, 173, 1) 0%, rgba(159, 237, 228, 1) 100%);
+}
+
+.green__btn {
+    background: #39B2AD;
+    background: linear-gradient(145deg,rgba(57, 178, 173, 1) 0%, rgba(187, 242, 236, 1) 100%);
+}
+
+.plan__business {
+    background: #4E53C2;
+    background: linear-gradient(145deg, rgba(78, 83, 194, 1) 0%, rgba(144, 157, 222, 1) 100%);
+}
+
+.white__btn {
+    background-color: white;
+}
+
+.gradient__text {
+    background-image: linear-gradient(145deg,rgba(78, 83, 194, 1) 0%, rgba(106, 114, 206, 1) 13%, rgba(120, 130, 212, 1) 29%, rgba(144, 157, 222, 1) 82%);
+    color: transparent;
+    background-clip: text;
+}
+
+.transparent {
+    background-color: transparent;
+    color: #fff; 
+}
+
+.white__font {
+    color: #fff;
+}
+
+.plan__enterprise {
+    background: #F56C6C;
+    background: linear-gradient(145deg, rgba(245, 108, 108, 1) 0%, rgba(255, 191, 191, 1) 100%);
+}
+
+.salmon__btn {
+    background: #F56C6C;
+    background: linear-gradient(145deg, rgba(245, 108, 108, 1) 0%, rgba(255, 191, 191, 1) 100%);
+}
