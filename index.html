@@ -6,6 +6,7 @@
     <title>Treact</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d365e4b860.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -19,13 +20,41 @@
                 </div>
                 <nav class="nav__Links--container">
                     <ul class="nav__links">
-                        <li class="nav__link"><a href="#">About</a></li>
-                        <li class="nav__link"><a href="#">Blog</a></li>
-                        <li class="nav__link"><a href="#">Pricing</a></li>
-                        <li class="nav__link"><a href="#">Contact Us</a></li>
-                        <li class="nav__link nav__login--link"><a href="#">Login</a></li>
-                        <button class="btn nav__button--sign--up">Sign Up</button>
+                        <li class="nav__link"><a class="no__cursor" href="#">About</a></li>
+                        <li class="nav__link"><a class="no__cursor" href="#">Blog</a></li>
+                        <li class="nav__link"><a class="no__cursor" href="#">Pricing</a></li>
+                        <li class="nav__link"><a class="no__cursor" href="#">Contact Us</a></li>
+                        <li class="nav__link nav__login--link"><a class="no__cursor" href="#">Login</a></li>
+                        <button class="no__cursor btn nav__button--sign--up">Sign Up</button>
                     </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="btn__bars fa-solid fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="btn__close fa-solid fa-xmark"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Home</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Blog</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Pricing</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Contact Us</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Login</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>            
         </div>
@@ -36,7 +65,8 @@
                     <p class="hero__para">Our Templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
                     <form class="hero__call-to-action" action="">
                         <input class="hero__CTA--email" type="email" placeholder="Your E-mail Address">
-                        <input class="hero__CTA--submit btn" type="submit" value="Get Started">
+                        <input class="no__cursor hero__CTA--submit btn" type="submit" value="Get Started">
+                        <input class="no__cursor hero__CTA--submit hero__CTA--submit--arrow btn" type="submit" value="➜">
                     </form>
                     <div class="hero__subheading">
                         <h3 class="hero__subheading--title">Our Trusted Customers</h3>
@@ -136,7 +166,7 @@
                 <p class="quality__para  para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias in rerum praesentium fugit cupiditate molestias iste corrupti ipsam deleniti maxime suscipit iusto, nihil nulla. Soluta libero asperiores sint nihil in!
                 </p>
-                <button class="btn">Learn More</button>
+                <button class="no__cursor btn">Learn More</button>
             </div>
             <div class="quality__img--container container__padding">
                 <figure class="quality__img--wrapper">
@@ -215,7 +245,7 @@
                         </ul>
                     </div>
                     <div class="plan__btn--container">
-                        <button class="btn plan__btn green__btn">Buy Now</button>
+                        <button class="no__cursor btn plan__btn green__btn">Buy Now</button>
                     </div>
                 </div>
                 
@@ -235,7 +265,7 @@
                         </ul>
                     </div>
                     <div class="plan__btn--container transparent">
-                        <button class="btn plan__btn white__btn"><span class="gradient__text">Buy Now</span></button>
+                        <button class="no__cursor btn plan__btn white__btn"><span class="gradient__text">Buy Now</span></button>
                     </div>
                 </div>
                 
@@ -255,7 +285,7 @@
                         </ul>
                     </div>
                     <div class="plan__btn--container">
-                        <button class="btn plan__btn salmon__btn">Buy Now</button>
+                        <button class="no__cursor btn plan__btn salmon__btn">Buy Now</button>
                     </div>
                 </div>
                 
@@ -269,61 +299,61 @@
                 <div class="links__list">
                     <h2 class="link__list--title">MAIN</h2>
                     <ul class="links">
-                        <li><a class="link" href="">Blog</a></li>
-                        <li><a class="link" href="">FAQs</a></li>
-                        <li><a class="link" href="">Support</a></li>
-                        <li><a class="link" href="">About Us</a></li>
+                        <li><a class="link no__cursor" href="">Blog</a></li>
+                        <li><a class="link no__cursor" href="">FAQs</a></li>
+                        <li><a class="link no__cursor" href="">Support</a></li>
+                        <li><a class="link no__cursor" href="">About Us</a></li>
                     </ul>
                 </div>
                 <div class="links__list">
                     <h2 class="link__list--title">PRODUCT</h2>
                     <ul class="links">
-                        <li><a class="link" href="">Log in</a></li>
-                        <li><a class="link" href="">Personal</a></li>
-                        <li><a class="link" href="">Business</a></li>
-                        <li><a class="link" href="">Team</a></li>
+                        <li><a class="link no__cursor" href="">Log in</a></li>
+                        <li><a class="link no__cursor" href="">Personal</a></li>
+                        <li><a class="link no__cursor" href="">Business</a></li>
+                        <li><a class="link no__cursor" href="">Team</a></li>
                     </ul>
                 </div>
                 <div class="links__list">
                     <h2 class="link__list--title">PRESS</h2>
                     <ul class="links">
-                        <li><a class="link" href="">Logos</a></li>
-                        <li><a class="link" href="">Events</a></li>
-                        <li><a class="link" href="">Stories</a></li>
-                        <li><a class="link" href="">Office</a></li>
+                        <li><a class="link no__cursor" href="">Logos</a></li>
+                        <li><a class="link no__cursor" href="">Events</a></li>
+                        <li><a class="link no__cursor" href="">Stories</a></li>
+                        <li><a class="link no__cursor" href="">Office</a></li>
                     </ul>
                 </div>
                 <div class="links__list">
                     <h2 class="link__list--title">TEAM</h2>
                     <ul class="links">
-                        <li><a class="link" href="">Career</a></li>
-                        <li><a class="link" href="">Founders</a></li>
-                        <li><a class="link" href="">Culture</a></li>
-                        <li><a class="link" href="">Onboarding</a></li>
+                        <li><a class="link no__cursor" href="">Career</a></li>
+                        <li><a class="link no__cursor" href="">Founders</a></li>
+                        <li><a class="link no__cursor" href="">Culture</a></li>
+                        <li><a class="link no__cursor" href="">Onboarding</a></li>
                     </ul>
                 </div>
                 <div class="links__list">
                     <h2 class="link__list--title">LEGAL</h2>
                     <ul class="links">
-                        <li><a class="link" href="">GDPR</a></li>
-                        <li><a class="link" href="">Privacy Policy</a></li>
-                        <li><a class="link" href="">Terms of Service</a></li>
-                        <li><a class="link" href="">Disclaimer</a></li>
+                        <li><a class="link no__cursor" href="">GDPR</a></li>
+                        <li><a class="link no__cursor" href="">Privacy Policy</a></li>
+                        <li><a class="link no__cursor" href="">Terms of Service</a></li>
+                        <li><a class="link no__cursor" href="">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer__bar">
-                <div class="footer__logo">
+                <div class="footer__logo footer__bar--child">
                     <figure class="footer__logo__wrapper">
                         <img class="footer__logo--img" src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="">
                     </figure>
                     <h1>Treact Inc.</h1>
                 </div>
-                <div class="copyright">
+                <div class="copyright footer__bar--child">
                     <p>&copy; 2018 Treact Inc. All Rights Reserved.</p>
                 </div>
-                <div class="social__links">
+                <div class="social__links footer__bar--child">
                     <div class="social__link">
                         <a class="no__cursor"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
