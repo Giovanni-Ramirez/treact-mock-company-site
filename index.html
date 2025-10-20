@@ -4,30 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
     <script src="https://kit.fontawesome.com/d365e4b860.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
 <body>
     <header>
         <div class="row">
-            <div class="nav">
+            <nav class="nav">
                 <div class="nav__logo--container">
-                    <figure class="logo__wrapper">
-                        <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="website logo of a T">
-                    </figure>
-                    <h1 class="nav__logo--text">Treact</h1>
+                    <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="website logo of a T">
+                    <div class="nav__logo--text">Treact</div>
                 </div>
-                <nav class="nav__Links--container">
+                <div class="nav__Links--container">
                     <ul class="nav__links">
                         <li class="nav__link"><a class="no__cursor" href="#">About</a></li>
                         <li class="nav__link"><a class="no__cursor" href="#">Blog</a></li>
                         <li class="nav__link"><a class="no__cursor" href="#">Pricing</a></li>
                         <li class="nav__link"><a class="no__cursor" href="#">Contact Us</a></li>
-                        <li class="nav__link nav__login--link"><a class="no__cursor" href="#">Login</a></li>
+                        <li class="nav__link nav__link--login"><a class="no__cursor" href="#">Login</a></li>
                         <button class="no__cursor btn nav__button--sign--up">Sign Up</button>
                     </ul>
-                    <button class="btn__menu" onclick="openMenu()">
+                    <!-- <button class="btn__menu" onclick="openMenu()">
                         <i class="btn__bars fa-solid fa-bars"></i>
                     </button>
                     <div class="menu__backdrop">
@@ -53,111 +51,110 @@
                             <li class="menu__list">
                                 <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Sign Up</a>
                             </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>            
-        </div>
-        <div class="row">
-            <div class="hero">
-                <div class="hero__landing--info">
-                    <h1 class="hero__title">Beautiful React Templates <span class="highlighted">for you.</span></h1>
-                    <p class="hero__para">Our Templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                    <form class="hero__call-to-action" action="">
-                        <input class="hero__CTA--email" type="email" placeholder="Your E-mail Address">
-                        <input class="no__cursor hero__CTA--submit btn" type="submit" value="Get Started">
-                        <input class="no__cursor hero__CTA--submit hero__CTA--submit--arrow btn" type="submit" value="➜">
-                    </form>
-                    <div class="hero__subheading">
-                        <h3 class="hero__subheading--title">Our Trusted Customers</h3>
-                        <figure class="hero__subheading--img--wrapper">
-                            <img class="hero__subheading--img" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="image of companies">
-                        </figure>
+                        </ul> -->
                     </div>
                 </div>
-                <figure class="hero__img--wrapper">
-                    <img class="hero__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="">
-                </figure>
+            </nav>            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="hero">
+                    <div class="hero__landing--info">
+                        <h1 class="hero__title">Beautiful React Templates <span class="highlighted">for you.</span></h1>
+                        <p class="hero__para">Our Templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+                        <form class="hero__call-to-action" action="">
+                            <input class="hero__CTA--email" type="email" placeholder="Your E-mail Address">
+                            <input class="no__cursor hero__CTA--submit btn" type="submit" value="Get Started">
+                        </form>
+                        <p class="hero__subheading--title">OUR TRUSTED CUSTOMERS</p>
+                            <img class="hero__subheading--img" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="image of companies">
+                    </div>
+                    <figure class="hero__img--wrapper">
+                        <img class="hero__img" src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="">
+                    </figure>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="features" class="container">
-        <div class="row features__section">
-            <h3 class="highlighted">FEATURES</h3>
-            <h1 class="title">We have Amazing <span class="highlighted">Service.</span></h1>
-            <p class="features__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorum repellendus esse.</p>
-            <div class="features__list">
-                <div class="feature__card">
-                    <figure class="feature__card--img--wrapper">
-                        <img class="feature__card--img" src="/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    </figure>
-                    <div class="feature__card--info">
-                        <h2 class="feature__card--title">Secure</h2>
-                        <p class="feature__card--para">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
-                        </p>
+        <div class="container">
+            <div class="row row__center">
+                <h3 class="highlighted">FEATURES</h3>
+                <h1 class="title">We have Amazing <span class="highlighted">Service.</span></h1>
+                <p class="features__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolorum repellendus esse.</p>
+                <div class="features__list">
+                    <div class="feature__card">
+                        <figure class="feature__card--img--wrapper">
+                            <img class="feature__card--img" src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                        </figure>
+                        <div class="feature__card--info">
+                            <h2 class="feature__card--title">Secure</h2>
+                            <p class="feature__card--para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature__card">
-                    <figure class="feature__card--img--wrapper">
-                        <img class="feature__card--img" src="/assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="">
-                    </figure>
-                    <div class="feature__card--info">
-                        <h2 class="feature__card--title">24/7 Support</h2>
-                        <p class="feature__card--para">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
-                        </p>
+                    <div class="feature__card">
+                        <figure class="feature__card--img--wrapper">
+                            <img class="feature__card--img" src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="">
+                        </figure>
+                        <div class="feature__card--info">
+                            <h2 class="feature__card--title">24/7 Support</h2>
+                            <p class="feature__card--para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature__card">
-                    <figure class="feature__card--img--wrapper">
-                        <img class="feature__card--img" src="/assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
-                    </figure>
-                    <div class="feature__card--info">
-                        <h2 class="feature__card--title">Customizable</h2>
-                        <p class="feature__card--para">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, adipisci.
-                        </p>
+                    <div class="feature__card">
+                        <figure class="feature__card--img--wrapper">
+                            <img class="feature__card--img" src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
+                        </figure>
+                        <div class="feature__card--info">
+                            <h2 class="feature__card--title">Customizable</h2>
+                            <p class="feature__card--para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature__card">
-                    <figure class="feature__card--img--wrapper">
-                        <img class="feature__card--img" src="/assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="">
-                    </figure>
-                    <div class="feature__card--info">
-                        <h2 class="feature__card--title">Reliable</h2>
-                        <p class="feature__card--para">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, commodi?
-                        </p>
+                    <div class="feature__card">
+                        <figure class="feature__card--img--wrapper">
+                            <img class="feature__card--img" src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="">
+                        </figure>
+                        <div class="feature__card--info">
+                            <h2 class="feature__card--title">Reliable</h2>
+                            <p class="feature__card--para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature__card">
-                    <figure class="feature__card--img--wrapper">
-                        <img class="feature__card--img" src="/assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="">
-                    </figure>
-                    <div class="feature__card--info">
-                        <h2 class="feature__card--title">Fast</h2>
-                        <p class="feature__card--para">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, dignissimos!
-                        </p>
+                    <div class="feature__card">
+                        <figure class="feature__card--img--wrapper">
+                            <img class="feature__card--img" src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="">
+                        </figure>
+                        <div class="feature__card--info">
+                            <h2 class="feature__card--title">Fast</h2>
+                            <p class="feature__card--para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature__card">
-                    <figure class="feature__card--img--wrapper">
-                        <img class="feature__card--img" src="/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    </figure>
-                    <div class="feature__card--info">
-                        <h2 class="feature__card--title">Secure</h2>
-                        <p class="feature__card--para">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quibusdam?
-                        </p>
+                    <div class="feature__card">
+                        <figure class="feature__card--img--wrapper">
+                            <img class="feature__card--img" src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="">
+                        </figure>
+                        <div class="feature__card--info">
+                            <h2 class="feature__card--title">Easy</h2>
+                            <p class="feature__card--para">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, asperiores.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section id="quality">
         <div class="row quality__container">
             <div class="quality__info container__padding">
