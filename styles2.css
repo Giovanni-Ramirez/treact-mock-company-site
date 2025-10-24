@@ -101,6 +101,9 @@ p {
   background-color: rgba(80, 17, 204);
 }
 
+section {
+    padding: 0 32px;
+}
 
 /* Navbar */
 nav {
@@ -328,3 +331,281 @@ nav {
     background-image: radial-gradient(var(--main-purple-color) 3px, transparent 3px);
     background-size: 16px 16px;
 }
+
+/* STEPS SECTION */
+
+.steps__container {
+    display: flex;
+}
+
+.steps__img--container, .steps__info {
+    width: 50%;
+}
+
+.steps__img--container {
+    display: flex;
+    align-items: center;
+}
+
+.steps__img--wrapper {
+    width: 90%;
+    position: relative;
+}
+
+.dotted2 {
+    position: absolute;
+    /* inset: 0; */
+    right: 39%;
+    bottom: -40px;
+    z-index: -1;
+    height: 110px;
+    width: 110px;
+    background-image: radial-gradient(#ede3ff 1px, transparent 1px);
+    background-size: 6px 6px;
+}
+
+.steps__info {
+    padding: 0 80px 0 64px;
+}
+
+.steps__card {
+    display: flex;
+    margin-top: 32px;
+}
+
+.steps__card--num h1 {
+    padding-right: 24px;
+    color: #cbd5e0;
+}
+
+.steps__card--para {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/* values */
+.values__container {
+    display: flex;
+}
+
+.values__info--container, .values__img--wrapper {
+    width: 50%;
+}
+
+.values__info--container {
+    padding: 32px 64px 32px 0;
+}
+
+.values__points--container {
+    display: flex;
+}
+
+.values__point {
+    margin: 32px 32px 0 0;
+}
+
+.values__point--bar {
+    display: flex;
+    align-items: center;
+}
+
+.values__point--icon-container {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affordable__icon {
+    background-color: #9ae6b4;
+}
+
+.fa-dollar-sign {
+    color: #276648;
+}
+
+.professionalism__icon {
+    background-color: #ffb3b3;
+}
+
+.fa-suitcase {
+    color: #9b2c2c;
+}
+
+.values__point--heading {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.values__point--para {
+    margin-top: 16px;
+    line-height: 1.625;
+    color: #718096;
+}
+
+.values__info--container .btn {
+    margin-top: 48px;
+}
+
+.values__img--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/*
+
+pricing
+
+*/
+
+.pricing__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__para {
+    max-width: 450px;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 64px 0;
+}
+
+.plan {
+    width: calc(100%/3.5);
+    max-width: 350px;
+    min-width: 270px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgb(0 0 0 / 10%);
+    margin: 0 24px;
+}
+
+.plan__pricing--info {
+    margin-top: 8px;
+    background-color: #fff;
+    padding: 24px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.plan__pricing--info h1 {
+    font-size: 40px;
+    font-weight: 800;
+    padding: 12px 0;
+}
+
+.plan__pricing--p {
+    color: #9cabbe;
+    font-weight: 700;
+}
+
+
+
+.plan__info {
+    padding: 24px 0;
+    background-color: #fff;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.plan__info h3 {
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.plan__ul {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plan__ul li {
+    padding: 12px 0;
+}
+
+.plan__btn--container {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan__btn {
+    width: 50%;
+    height: 50%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+        /* this is the different color for the plans */
+
+.plan__personal {
+    background: #39B2AD;
+    background: linear-gradient(145deg, rgba(57, 178, 173, 1) 0%, rgba(159, 237, 228, 1) 100%);
+}
+
+.green__btn {
+    background: #39B2AD;
+    background: linear-gradient(145deg,rgba(57, 178, 173, 1) 0%, rgba(187, 242, 236, 1) 100%);
+}
+
+.plan__business {
+    background: #4E53C2;
+    background: linear-gradient(145deg, rgba(78, 83, 194, 1) 0%, rgba(144, 157, 222, 1) 100%);
+}
+
+.plan__business .plan__pricing--info h1, 
+.plan__business .plan__pricing--info h3,
+.plan__business .plan__info h3,
+.plan__business .plan__info li {
+    color: white;
+}
+
+.white__btn {
+    background-color: white;
+}
+
+.gradient__text {
+    background-image: linear-gradient(145deg,rgba(78, 83, 194, 1) 0%, rgba(106, 114, 206, 1) 13%, rgba(120, 130, 212, 1) 29%, rgba(144, 157, 222, 1) 82%);
+    color: transparent;
+    background-clip: text;
+}
+
+.transparent {
+    background-color: transparent;
+    color: #fff; 
+}
+
+.white__font {
+    color: #fff;
+}
+
+.plan__enterprise {
+    background: #F56C6C;
+    background: linear-gradient(145deg, rgba(245, 108, 108, 1) 0%, rgba(255, 191, 191, 1) 100%);
+}
+
+.salmon__btn {
+    background: #F56C6C;
+    background: linear-gradient(145deg, rgba(245, 108, 108, 1) 0%, rgba(255, 191, 191, 1) 100%);
+}
+
