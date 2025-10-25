@@ -609,3 +609,75 @@ pricing
     background: linear-gradient(145deg, rgba(245, 108, 108, 1) 0%, rgba(255, 191, 191, 1) 100%);
 }
 
+/* TESTIMONIALS */
+
+.testimonials__container {
+    display: flex;
+}
+
+.testimonial__img--wrapper {
+    width: 40%;
+}
+
+.testimonials__info--container{
+    width: calc(100% - 40%);
+}
+
+.testimonial__img--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__info--container {
+    padding-left: 64px;
+}
+
+.testimonial__rating {
+    margin-top: 40px;
+}
+
+.testimonial__review--title {
+    margin-top: 16px;
+}
+
+.testimonial__review--para {
+    margin: 16px 0 32px 0;
+}
+
+.testimonial__review--user--bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__img--title {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__review--img--wrapper {
+    width: 80px;
+    display: flex;
+}
+
+.testimonial__review--img {
+    border-radius: 50%;
+}
+
+.testimonial__name--title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.testimonial__btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: none;
+    margin: 0 10px;
+}
+
+.testimonial__btn i {
+    color: var(--main-purple-color);
+}
