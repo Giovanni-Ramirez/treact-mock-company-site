@@ -681,3 +681,67 @@ pricing
 .testimonial__btn i {
     color: var(--main-purple-color);
 }
+
+/* contact bar */
+
+.contact__bar--container {
+    background-color: var(--main-purple-color);
+    padding: 96px 0;
+}
+
+.contact__bar {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact__bar--text--container {
+    width: 50%;
+}
+
+
+.contact__bar--text {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+
+}
+
+.contact__btn--container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact__bar--btn {
+    background-color: var(--main-purple-color);
+    color: #fff;
+    border: 0.5px solid white;
+    border-radius: 500px;
+    padding: 18px  32px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 16px;
+    transition: all 200ms ease;
+}
+
+.contact__bar--btn:hover {
+    background-color: #fff;
+    color: var(--main-purple-color);
+}
+
+.highlighted-btn {
+    background-color: #f56464;
+    border-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.highlighted-btn:hover {
+    background-color: #ee4141;
+    color: #fff;
+}
