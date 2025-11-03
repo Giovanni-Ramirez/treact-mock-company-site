@@ -25,36 +25,25 @@
                         <li class="nav__link nav__link--login"><a class="no__cursor" href="#">Login</a></li>
                         <button class="no__cursor btn nav__button--sign--up">Sign Up</button>
                     </ul>
-                    <!-- <button class="btn__menu" onclick="openMenu()">
-                        <i class="btn__bars fa-solid fa-bars"></i>
-                    </button>
-                    <div class="menu__backdrop">
-                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                            <i class="btn__close fa-solid fa-xmark"></i>
+                        <button class="btn__menu" onclick="openMenu()">
+                            <i class="fa-solid fa-bars"></i>
                         </button>
-                        <ul class="menu__links">
-                            <li class="menu__list">
-                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Home</a>
-                            </li>
-                            <li class="menu__list">
-                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Blog</a>
-                            </li>
-                            <li class="menu__list">
-                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Pricing</a>
-                            </li>
-                            <li class="menu__list">
-                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Contact Us</a>
-                            </li>
-                            <li class="menu__list">
-                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Login</a>
-                            </li>
-                            <li class="menu__list">
-                                <a class="menu__link no__cursor" href="#" onclick="closeMenu()">Sign Up</a>
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
-            </nav>            
+            </nav>
+            <div class="menu">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="menu__links">
+                <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+                <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
+                </div>
+            </div>            
         </div>
         <div class="container">
             <div class="row">
@@ -258,7 +247,7 @@
         </div>
     </section>
 
-    <section class="pricing">
+    <section id="pricing">
         <div class="container">
             <div class="row pricing__container">
                 <h3 class="section__tag">PRICING</h3>
@@ -392,7 +381,7 @@
     <footer>
         <div class="row footer__padding">
             <div class="link__catalog--container">
-                <div class="links__list">
+                <div class="link__list">
                     <h2 class="link__list--title">MAIN</h2>
                     <ul class="links">
                         <li><a class="link no__cursor" href="">Blog</a></li>
@@ -401,7 +390,7 @@
                         <li><a class="link no__cursor" href="">About Us</a></li>
                     </ul>
                 </div>
-                <div class="links__list">
+                <div class="link__list">
                     <h2 class="link__list--title">PRODUCT</h2>
                     <ul class="links">
                         <li><a class="link no__cursor" href="">Log in</a></li>
@@ -410,7 +399,7 @@
                         <li><a class="link no__cursor" href="">Team</a></li>
                     </ul>
                 </div>
-                <div class="links__list">
+                <div class="link__list">
                     <h2 class="link__list--title">PRESS</h2>
                     <ul class="links">
                         <li><a class="link no__cursor" href="">Logos</a></li>
@@ -419,7 +408,7 @@
                         <li><a class="link no__cursor" href="">Office</a></li>
                     </ul>
                 </div>
-                <div class="links__list">
+                <div class="link__list">
                     <h2 class="link__list--title">TEAM</h2>
                     <ul class="links">
                         <li><a class="link no__cursor" href="">Career</a></li>
@@ -428,7 +417,7 @@
                         <li><a class="link no__cursor" href="">Onboarding</a></li>
                     </ul>
                 </div>
-                <div class="links__list">
+                <div class="link__list">
                     <h2 class="link__list--title">LEGAL</h2>
                     <ul class="links">
                         <li><a class="link no__cursor" href="">GDPR</a></li>
